@@ -8,8 +8,8 @@ const Header = ({ toggle, theme }) => {
       <nav>
         <h1>Picterest</h1>
         <button onClick={toggle}>
-          {theme === "lightTheme" ? (
-            <FaMoon style={{ color: "#D5D8DC" }} />
+          {theme === "light" ? (
+            <FaMoon style={{ color: "#34495e" }} />
           ) : (
             <FaSun style={{ color: "#f1c40f" }} />
           )}

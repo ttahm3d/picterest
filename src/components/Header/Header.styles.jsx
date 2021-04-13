@@ -5,7 +5,6 @@ export const StyledHeader = styled.header`
     font-family: "Pacifico";
     color: #e74c3c;
     font-size: 30px;
-    letter-spacing: 2px;
     margin: 0;
   }
 

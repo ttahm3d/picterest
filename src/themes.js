@@ -1,13 +1,13 @@
 import { createGlobalStyle } from "styled-components";
 
 export const light = {
-  bg: "#fafafa",
-  fg: "#313131",
+  bg: "#fff",
+  fg: "#000",
 };
 
 export const dark = {
   bg: "#18191c",
-  fg: "#ffffff",
+  fg: "#fafafa",
 };
 
 export const GlobalStyles = createGlobalStyle`
@@ -15,4 +15,6 @@ export const GlobalStyles = createGlobalStyle`
 		background-color: ${(props) => props.theme.bg};
     color: ${(props) => props.theme.fg}
 	}
+
+  
 `;
