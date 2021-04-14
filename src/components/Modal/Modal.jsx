@@ -8,7 +8,6 @@ const Modal = ({ selectedImg, setSelectedImg }) => {
 
   return (
     <StyledModal onClick={closeModal}>
-      {/* <img src={selectedImg} alt="Enalrged Img" /> */}
       <img src={selectedImg} alt="enlargedimage" />
     </StyledModal>
   );

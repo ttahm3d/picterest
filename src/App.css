@@ -9,4 +9,5 @@
 body {
   margin: 0;
   font-family: "Raleway", sans-serif;
+  transition: background 0.3s linear;
 }
