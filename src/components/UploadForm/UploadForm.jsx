@@ -8,6 +8,7 @@ const UploadForm = () => {
   const fileTypes = ["image/png", "image/jpeg", "image/jpg"];
 
   const changeHandler = (event) => {
+    setFile(null);
     let selectedFile = event.target.files[0];
     if (selectedFile && fileTypes.includes(selectedFile.type)) {
       setFile(selectedFile);
@@ -22,11 +23,14 @@ const UploadForm = () => {
   return (
     <UploadFormWrapper>
       <form>
-        <input type="file" name="" id="" onChange={changeHandler} />
+        <label htmlFor="fileInput">
+          <input type="file" id="fileInput" onChange={changeHandler} />
+          <span>Upload File</span>
+        </label>
         <div>
           {error && <div className="error">{error}</div>}
-          {file && <div>{file.name}</div>}
-          {file && <ProgressBar />}
+          {file && <div>uploading {file.name}</div>}
+          {file && <ProgressBar file={file} setFile={setFile} />}
         </div>
       </form>
     </UploadFormWrapper>
